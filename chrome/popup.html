@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 280px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+    h1 {
+      font-size: 18px;
+      text-align: center;
+      margin-top: 0;
+      color: #444;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 5px;
+    }
+    .status {
+      text-align: center;
+      margin-bottom: 10px;
+      font-weight: bold;
+      padding: 8px;
+      border-radius: 4px;
+      width: 100%;
+    }
+    .status.connected {
+      background-color: #d4edda;
+      color: #155724;
+    }
+    .status.disconnected {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+    .server-selection {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .server-selection select {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      background-color: #f8f9fa;
+      font-size: 14px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    #connectBtn {
+      background-color: #28a745;
+      color: white;
+    }
+    #connectBtn:hover {
+      background-color: #218838;
+    }
+    #connectBtn:disabled {
+      background-color: #6c757d;
+      cursor: not-allowed;
+    }
+    #disconnectBtn {
+      background-color: #dc3545;
+      color: white;
+    }
+    #disconnectBtn:hover {
+      background-color: #c82333;
+    }
+    #disconnectBtn:disabled {
+      background-color: #6c757d;
+      cursor: not-allowed;
+    }
+    .server-info {
+      font-size: 12px;
+      color: #666;
+      text-align: center;
+      margin-top: 15px;
+      padding-top: 10px;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="images/logo.png" alt="VPN Logo" class="logo">
+    <h1>Aban VPN</h1>
+    <div class="status" id="status">Status: Checking...</div>
+    
+    <div class="server-selection">
+      <select id="serverSelect">
+        <!-- Will be populated from JavaScript -->
+      </select>
+    </div>
+    
+    <button id="connectBtn">Connect</button>
+    <button id="disconnectBtn">Disconnect</button>
+    
+    <div class="server-info" id="serverInfo">
+      Server: Loading...
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
