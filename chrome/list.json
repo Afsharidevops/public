@@ -15,14 +15,14 @@
   },
   {
     "id": "server3",
-    "name": "Test Server 4",
+    "name": "Test Server 1",
     "host": "10.10.10.80",
     "port": 1080,
     "type": "socks5"
   },
   {
     "id": "server4",
-    "name": "Test Server 5",
+    "name": "Test Server 2",
     "host": "10.10.10.81",
     "port": 1080,
     "type": "socks5"
