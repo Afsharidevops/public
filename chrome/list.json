@@ -1,0 +1,23 @@
+[
+  {
+    "id": "server1",
+    "name": "Staging Server",
+    "host": "192.168.130.19",
+    "port": 1080,
+    "type": "socks5"
+  },
+  {
+    "id": "server2",
+    "name": "Prod Server",
+    "host": "192.168.150.19",
+    "port": 1080,
+    "type": "socks5"
+  },
+  {
+    "id": "server3",
+    "name": "Test Server",
+    "host": "10.10.10.80",
+    "port": 1080,
+    "type": "socks5"
+  }
+]
