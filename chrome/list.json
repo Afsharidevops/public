@@ -26,12 +26,5 @@
     "host": "10.10.10.81",
     "port": 1080,
     "type": "socks5"
-  },
-  {
-    "id": "server5",
-    "name": "Test Server 3",
-    "host": "10.10.10.82",
-    "port": 1080,
-    "type": "socks5"
   }
 ]
